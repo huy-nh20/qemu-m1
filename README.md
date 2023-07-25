@@ -10,7 +10,7 @@
 `./run.sh start [VM name] [path to OS iso file]`
 
 - Launch VM: 
-`./run.sh launch [VM name]`
+`sudo ./run.sh launch [VM name]`
 
 
 

@@ -15,7 +15,7 @@ elif [ "$cmd" = "start" ];then
 qemu-system-x86_64 -hda $2/$disk -boot d -cdrom $3  -m 2G -usb -machine pc
 
 elif [ "$cmd" = "launch" ];then
-sudo qemu-system-x86_64 -hda $2/$disk -boot d -m 2G -nic vmnet-bridged,ifname=en0 -usb -machine q35 -cpu max -smp cores=8,threads=1,sockets=1  &
+qemu-system-x86_64 -hda $2/$disk -boot d -m 2G -nic vmnet-bridged,ifname=en0 -usb -machine q35 -cpu max -smp cores=8,threads=1,sockets=1  &
 
 elif [ "$cmd" = "list" ];then
 find . -name "*.qcow2"
